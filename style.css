@@ -1,0 +1,244 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --cor-fundo-principal: #f5f5f5; 
+  --cor-texto-principal: #333333;    
+  --cor-fundo-header: #ffffff;
+  --cor-listra-header:#0056a3; 
+  --header-nav:#0056a3;
+  --estatisticas-h2:#003366; 
+  --card-h2:#0077cc;
+  --card-li-:#eeeeee;
+  --banner-left-right:#0056a3;   
+  --footer-background:#0056a3;
+  --footer-color: #ffffff;
+  --banner-left: #0056a3;          
+  --banner-right: #0056a3;
+  --video: #333333; 
+  --estatisticas-p: #333333;
+  --banner-text: #f0f0f0;
+  --banner-li-text: #000000;
+  --imagem-card: #00000033; 
+
+}
+
+body {
+    background-color: var(--cor-fundo-principal); 
+    color: var(--cor-texto-principal);            
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+  background-color: var(--cor-fundo-header);
+  border-bottom: 3px solid var( --cor-listra-header);
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index:1000;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo img {
+  width: 200px;
+}
+
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color:var(--header-nav);
+  font-weight: bold;
+}
+
+.conteudo {
+  padding: 50px 50px;
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;   
+  height: auto;  
+  display: block; 
+}
+
+.estatisticas {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.estatisticas .container {
+  display: flex;
+  justify-content: center;
+  gap: 80px; 
+  flex-wrap: wrap;
+}
+
+.estatisticas .item h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color:var(--estatisticas-h2);
+  margin-bottom: 8px;
+}
+
+.estatisticas .item p {
+  font-size: 1rem;
+  color:var(--estatisticas-p); 
+  line-height: 1.4;
+}
+
+.cards-locais {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.video {
+  width: 70%;           
+  max-width: 560px;     
+  aspect-ratio: 16/9;    
+  display: block;        
+  margin: 20px auto;     
+  border-radius: 20px;   
+  overflow: hidden;      
+  box-shadow: 0 4px 20px var(--video);
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 200px;      
+  height: 200px;
+  object-fit: cover;  
+  border-radius: 50%; 
+  overflow: hidden;   
+  box-shadow: 0 5px 10px var(--imagem-card);
+  transition: transform 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Services img {
+    max-width: 100%; 
+    height: auto;   
+    display: block;  
+    margin: 0 auto;  
+    text-align: center;
+}
+
+.banner-text {
+    display: flex;              
+    justify-content: space-between; 
+    align-items: center;        
+    padding: 20px 40px;         
+    background-color:var(--banner-text);
+    font-family: Arial;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color:var(--card-h2); 
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--card-li);
+}
+
+.card li:last-child {
+  border-bottom: none;
+}
+
+.banner-text .left {
+    font-size: 1.9rem;           
+    font-weight: bold;
+    color: var(--banner-left);            
+}
+
+.banner-text .right {
+    font-size: 1.9rem;         
+    font-weight: bold;
+    color:var(--banner-right);
+  
+}
+.banner-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.banner-text li {
+  color:var(--banner-li-text)
+}
+
+footer {
+  background:var(--footer-background);
+  color:var(--footer-color);
+  text-align: center;
+  padding: 20px;
+  
+}
+
+
+
+footer .social img {
+  width: 40px;         
+  height: auto;
+  transition: transform 0.3s;
+}
+
+footer .social img:hover {
+  transform: scale(1.1); 
+}
